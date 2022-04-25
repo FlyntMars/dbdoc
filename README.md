@@ -39,3 +39,6 @@ This project(based poi-tl plugin) can helpfull generate your database document m
 PS: dbdoc-template.docx is a template word file,you can edit it anywhere,but you need to know poi-tl grammar,more detail: http://deepoove.com/poi-tl/1.6.x/
 
 PPS: Core code is the dbdoc\src\main\java\com\gwl\dbdoc\service\TableService.java，dbdoc\src\main\java\com\gwl\dbdoc\controller\TableController.java is execute code.
+
+Export Preview
+![image](https://github.com/FlyntMars/dbdoc/blob/master/src/main/resources/export-preview/export-1.png)
