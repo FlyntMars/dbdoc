@@ -13,10 +13,14 @@ dbdoc是一个基于poi-tl插件可以自动生成数据库文档的小程序。
 2. 将dbdoc\src\main\java\com\gwl\dbdoc\service\TableService.java类拷贝至你的项目，或仅仅是复制代码到你的项目亦可
 3. 开始使用，你可以写一个controller或是一个单元测试类来使用它
 
-PS：确认你的项目是否支持jdbc（常规的web项目已默认引入），如果没有，则需要在pom.xml中引入，如下：
+注：
+1. 确认你的项目是否支持jdbc（常规的web项目已默认引入），如果没有，则需要在pom.xml中引入，如下：
 ```<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-jdbc</artifactId></dependency>```
+2. dbdoc-template.docx可以根据你的要求随意修改，但你需要知道poi-tl的标签语法，详情参考：http://deepoove.com/poi-tl/1.6.x/ 核心代码是dbdoc\src\main\java\com\gwl\dbdoc\service\TableService.java，调用在dbdoc\src\main\java\com\gwl\dbdoc\controller\TableController.java，你可以查看或调整以达到你的要求
 
-PPS：dbdoc-template.docx可以根据你的要求随意修改，但你需要知道poi-tl的标签语法，详情参考：http://deepoove.com/poi-tl/1.6.x/ 核心代码是dbdoc\src\main\java\com\gwl\dbdoc\service\TableService.java，调用在dbdoc\src\main\java\com\gwl\dbdoc\controller\TableController.java，你可以查看或调整以达到你的要求
+## 项目优势
+1. 极低的依赖和零侵入性，项目只需引入poi-tl插件即可使用
+2. 极大的灵活性，稍加修改模板文件（dbdoc-template.docx）即可满足自己的要求
 
 # User Manual
 dbdoc is based poi-tl plugin,It can helpfull generate your database document more easy.
